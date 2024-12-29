@@ -56,7 +56,7 @@ def update_item():
 def update_inventory_display():
     inventory_listbox.delete(0, tk.END)
     for item in inventory:
-        inventory_listbox.insert(tk.END, f"{item['name']} | Quantity: {item['quantity']} | Price: ${item['price']:.2f}")
+        inventory_listbox.insert(tk.END, f"{item['name']} | Quantity: {item['quantity']} | Price: ZAR{item['price']:.2f}")
 
 # Save and exit the program
 def save_and_exit():
